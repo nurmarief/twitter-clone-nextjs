@@ -15,13 +15,14 @@ import {
 export default function Sidebar() {
   return (
     <div className='relative'>
-      <div className='sticky top-0 py-4 px-8 hidden sm:block space-y-4'>
+      <div className='sticky top-0 py-4 px-8 hidden sm:block space-y-6'>
         {/* Logo */}
-        <div className='menu-item relative hover:bg-blue-100'>
+        <div className='relative rounded-full p-3 w-fit hover:bg-blue-100 cursor-pointer'>
           <Image
             src='https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg'
             alt='Twitter logo'
-            fill={true}
+            height={40}
+            width={40}
           ></Image>
         </div>
 

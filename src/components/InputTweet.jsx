@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function InputTweet() {
   return (
     <div className='border-b border-gray-200 p-3 flex space-x-3'>
-      <div className='relative rounded-full h-11 w-11 cursor-pointer hover:brightness-95'>
+      <div className='relative rounded-full h-11 w-11 cursor-pointer hover:brightness-95 overflow-hidden'>
         <Image
           src='https://www.insoft.co.id/wp-content/uploads/2014/05/default-user-image.png'
           alt='User img'

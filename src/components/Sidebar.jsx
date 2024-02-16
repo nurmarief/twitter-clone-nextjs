@@ -17,12 +17,11 @@ export default function Sidebar() {
     <div className='relative'>
       <div className='sticky top-0 py-4 px-8 hidden sm:block space-y-4'>
         {/* Logo */}
-        <div className='sidebar-menu-item hover:bg-blue-100'>
+        <div className='menu-item relative hover:bg-blue-100'>
           <Image
             src='https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg'
             alt='Twitter logo'
-            width='50'
-            height='50'
+            fill={true}
           ></Image>
         </div>
 
@@ -42,8 +41,8 @@ export default function Sidebar() {
         <button className='rounded-full w-56 h-12 hidden xl:inline bg-blue-400 shadow-md hover:brightness-95 text-lg text-white font-bold'>Tweet</button>
 
         {/* Mini-Profile */}
-        <div className='sidebar-menu-item flex items-center justify-center xl:justify-start text-gray-700'>
-          <div className='rounded-full relative h-10 w-10 xl:mr-2'>
+        <div className='flex items-center justify-center xl:justify-start text-gray-700'>
+          <div className='menu-item rounded-full relative h-10 w-10 xl:mr-2 overflow-hidden'>
             <Image
               src='https://www.insoft.co.id/wp-content/uploads/2014/05/default-user-image.png'
               alt='User img'
